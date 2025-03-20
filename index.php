@@ -1,0 +1,2 @@
+<?php
+echo "HELLO THRIVE CART! BASKET ID: ";

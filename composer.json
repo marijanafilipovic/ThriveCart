@@ -1,0 +1,21 @@
+{
+    "name": "marfi/thrive-cart",
+    "description": "Basket concept",
+    "type": "composer-plugin",
+    "require": {
+        "phpstan/phpstan": "2.1.x-dev"
+    },
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Marfi\\ThriveCart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marijana",
+            "email": "marijana.filipovic@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
