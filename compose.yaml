@@ -1,8 +1,18 @@
+version: '3.8'
+
 services:
   server:
     build:
       context: .
     ports:
-      - 9000:80
+      - "9000:80"
     volumes:
       - .:/var/www/html
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html/public
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

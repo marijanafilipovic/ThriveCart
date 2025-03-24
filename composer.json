@@ -2,9 +2,6 @@
     "name": "marfi/thrive-cart",
     "description": "Basket concept",
     "type": "composer-plugin",
-    "require": {
-        "phpstan/phpstan": "2.1.x-dev"
-    },
     "license": "mit",
     "autoload": {
         "psr-4": {
@@ -17,5 +14,10 @@
             "email": "marijana.filipovic@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^12.1@dev",
+        "phpstan/phpstan": "2.1.x-dev",
+        "mikey179/vfsstream": "^2.0@dev"
+    }
 }
