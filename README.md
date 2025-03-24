@@ -9,6 +9,7 @@ To set up the project, follow these steps:
    composer install
 
 2. Start application:
+   ```sh
     docker composer --build up -d
 
 ### Assumptions
@@ -16,10 +17,10 @@ To set up the project, follow these steps:
     The number of products is not expected to grow significantly.
 
 ### Product Catalog
-    Use content from products.csv
+    Use content from products.csv as products settings data.
 
 ### Basket data
-    Use codes from basket.csv
+    Use product codes from basket.csv
 
 ### Special Offers
 
