@@ -1,20 +1,26 @@
-# TRHIVE CART
-## 1. composer install
-## 2. docker compose up --build -d
+# ThriveCart
 
-# ASSUMPTION
+## Installation
 
-## Three digital products do not have ambition for big expansion
-## All products of the same type have same code
+To set up the project, follow these steps:
 
-## I have used product.csv as configuration basket and as sample basket, regarding that product in basket is added per product Code but it is up to be discuss
+1. Install dependencies:
+   ```sh
+   composer install
 
-# SPECIAL OFFER 
-## can be extended with ceation of a new classs that imaplemnts iterface
-## must be asigned on porduct in product.csv configuration file
+2. Start application:
+    docker composer --build up -d
 
-# SHIPPING RULES
-## aplly defined on BasketService instantiation
+### Assumptions
 
-## can be extended with ceation of a new classs that imaplemnts iterface
-## must be asigned on porduct in product.csv configuration file
+    The number of products is not expected to grow significantly.
+
+### Special Offers
+
+    A special offer should be assigned to a product in the product.csv configuration file.
+    Special offers can be extended by creating a new class that implements the SpecialOffer interface.
+    
+### Shipping Rules
+
+    Shipping rules are applied during the instantiation of BasketService.
+    Open for further scaling.
